@@ -16,7 +16,7 @@ With a fourth spin the invariant tensor space on the four-spin support has sever
 
 ## The rate bound holds with arbitrary sheltered spins
 
-Fix any feasible field triad and its simultaneous reversal. Write $`K_g=\frac12\sum_i (R_g\mathbf b_i)\cdot\boldsymbol\sigma_i`$ for the generator when a common rotation $g$ is applied to the fields. It acts trivially on sheltered registers. With $h=3B/2$, it satisfies $\|K_g\|\le h$. Invariant preparation $\rho$ and invariant effects $M_j$ imply that the one-round probabilities equal their Haar average. Their square roots are therefore the $L^2$ norms of the operator-valued functions
+Fix any feasible field triad and its simultaneous reversal. Write $`K_g=\frac12\sum_i (R_g\mathbf b_i)\cdot\boldsymbol\sigma_i`$ for the generator when a common rotation $g$ is applied to the fields. It acts trivially on sheltered registers. With $h=3B/2$, it satisfies $`\lVert K_g\rVert\le h`$. Invariant preparation $\rho$ and invariant effects $M_j$ imply that the one-round probabilities equal their Haar average. Their square roots are therefore the $L^2$ norms of the operator-valued functions
 
 ```math
 a_j^\pm(g)=M_j^{1/2}e^{\mp itK_g}\rho^{1/2},

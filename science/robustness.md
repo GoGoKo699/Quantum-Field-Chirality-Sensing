@@ -1,6 +1,6 @@
 # Detector errors, spectator leakage, and exchange control
 
-The protocol uses one fresh four-spin state per round. Write $`A=|S_{12}S_{34}\rangle`$ for the source, $`P=\mathrm{SWAP}_{23}`$ for the routing gate, and $`Q=P^{S}_{12}P^{T}_{34}`$ for the rare-event effect. The forward setting applies $`P`$ after the simultaneous field exposure, and the reverse setting applies it before. Ambient fields are fixed during each exposure and the chirality promise is $`|\chi|\geq\chi_0>0`$, with $`\chi=b_1\cdot(b_2\times b_3)`$ and $`\|b_i\|\le B`$ for $`1\leq i\leq3`$. Set $`\operatorname{sinc}(x)=\sin(x)/x`$ with its continuous value at zero.
+The protocol uses one fresh four-spin state per round. Write $`A=|S_{12}S_{34}\rangle`$ for the source, $`P=\mathrm{SWAP}_{23}`$ for the routing gate, and $`Q=P^{S}_{12}P^{T}_{34}`$ for the rare-event effect. The forward setting applies $`P`$ after the simultaneous field exposure, and the reverse setting applies it before. Ambient fields are fixed during each exposure and the chirality promise is $`|\chi|\geq\chi_0>0`$, with $`\chi=b_1\cdot(b_2\times b_3)`$ and $`\|b_i\|\le B`$ for $`1\leq i\leq3`$. Set $`\mathrm{sinc}(x)=\sin(x)/x`$ with its continuous value at zero.
 
 ## A common detector floor changes the sampling rate
 
@@ -8,7 +8,7 @@ Let $`p_s`$ be the true rare-event frequency in setting $`s\in\{F,R\}`$. With an
 
 ```math
 c_i=\cos(t\|b_i\|/2),\qquad
-q_i=\frac{t}{2}\operatorname{sinc}(t\|b_i\|/2)b_i,\qquad
+q_i=\frac{t}{2}\mathrm{sinc}(t\|b_i\|/2)b_i,\qquad
 D=q_1\cdot(q_2\times q_3),
 ```
 
@@ -21,7 +21,7 @@ For $`0\lt tB\leq\pi/4`$, the sign of $`CD`$ is the sign of $`\chi`$. The gap an
 ```math
 |p_F-p_R|\geq \kappa t^3\chi_0,\qquad
 p_F+p_R\leq \frac92(tB)^2,\qquad
-\kappa=\frac{\cos(3\pi/8)\operatorname{sinc}^3(\pi/8)}{8}
+\kappa=\frac{\cos(3\pi/8)\mathrm{sinc}^3(\pi/8)}{8}
 ```
 
 follow from the singlet contraction and the fact that both ideal event amplitudes vanish at zero exposure. In particular, each event probability is at most $`\|(U-I)A\|^2`$ or the corresponding bound with $`PA`$, where $`U`$ is the joint field evolution and $`\|U-I\|\leq 3tB/2`$.
@@ -105,7 +105,7 @@ For a finite guarantee about the original three-field sign, suppose $`\|b_4\|\le
 Consequently the sign of the original $`\chi`$ is certified whenever
 
 ```math
-m_L=\cos(tL/2)\operatorname{sinc}^3(tB/2)\chi_0-3B^2L>0.
+m_L=\cos(tL/2)\mathrm{sinc}^3(tB/2)\chi_0-3B^2L>0.
 ```
 
 The contrast then has magnitude at least $`\cos(3\pi/8)(t/2)^3m_L`$. Both rare-event probabilities remain order $`t^2(3B+L)^2`$ or smaller. A uniformly positive leakage margin therefore preserves the ideal sampling exponent. With an uncontrolled fourth field the experiment returns a relative orientation, as specified by its exact determinant.

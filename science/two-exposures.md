@@ -13,15 +13,14 @@ Let $`U_i=\exp(-it\,\mathbf b_i\cdot\boldsymbol\sigma/2)`$ and $`U=U_1\otimes U_
 
 The cyclic permutation uses two sequential SWAPs. With SWAPs on pairs $`12`$ and $`23`$, swapping $`23`$ first and $`12`$ second gives $`P`$. Reversing the order gives $`P^\dagger`$. Both preparation settings and both measurements are invariant under a common spin rotation. Every run begins with a fresh preparation and produces one classical bit.
 
-The $`+`$ setting is equivalent to preparing a singlet on $`12`$, then applying $`UPUP^\dagger`$ and testing pair $`12`$. The three local factors of this effective unitary are $`U_1 U_3,\ U_2 U_1,\ U_3 U_2`$. The $`-`$ setting is equivalent to preparing a singlet on $`13`$, then applying $`UP^\dagger UP`$ and testing pair $`13`$. Its factors are $`U_1 U_2,\ U_2 U_3,\ U_3 U_1`$. The two factors determining each singlet survival amplitude follow from $`\langle s|(V\otimes W)|s\rangle=\operatorname{Tr}(VW^\dagger)/2`$ for $`V,W\in SU(2)`$.
+The $`+`$ setting is equivalent to preparing a singlet on $`12`$, then applying $`UPUP^\dagger`$ and testing pair $`12`$. The three local factors of this effective unitary are $`U_1 U_3,\ U_2 U_1,\ U_3 U_2`$. The $`-`$ setting is equivalent to preparing a singlet on $`13`$, then applying $`UP^\dagger UP`$ and testing pair $`13`$. Its factors are $`U_1 U_2,\ U_2 U_3,\ U_3 U_1`$. The two factors determining each singlet survival amplitude follow from $`\langle s|(V\otimes W)|s\rangle=\mathrm{Tr}(VW^\dagger)/2`$ for $`V,W\in SU(2)`$.
 
-Write $`U_i=c_i I-i\mathbf q_i\cdot\boldsymbol\sigma`$, with $`c_i=\cos(\theta_i)`$, $`\mathbf q_i=(t/2)\operatorname{sinc}(\theta_i)\mathbf b_i`$, $`\theta_i=t\|\mathbf b_i\|/2`$, and $`\operatorname{sinc}(z)=\sin(z)/z`$ extended continuously at zero. Let $`R_1`$ be the proper rotation satisfying $`U_1(\mathbf w\cdot\boldsymbol\sigma)U_1^\dagger=(R_1\mathbf w)\cdot\boldsymbol\sigma`$. The singlet survival amplitudes are real and equal to
+Write $`U_i=c_i I-i\mathbf q_i\cdot\boldsymbol\sigma`$, with $`c_i=\cos(\theta_i)`$, $`\mathbf q_i=(t/2)\mathrm{sinc}(\theta_i)\mathbf b_i`$, $`\theta_i=t\|\mathbf b_i\|/2`$, and $`\mathrm{sinc}(z)=\sin(z)/z`$ extended continuously at zero. Let $`R_1`$ be the proper rotation satisfying $`U_1(\mathbf w\cdot\boldsymbol\sigma)U_1^\dagger=(R_1\mathbf w)\cdot\boldsymbol\sigma`$. The singlet survival amplitudes are real and equal to
 ```math
 \begin{aligned}
-x&=\tfrac12\operatorname{Tr}(U_1 U_3 U_1^\dagger U_2^\dagger)=c_2 c_3+\mathbf q_2\cdot R_1\mathbf q_3,\\
-
+x&=\tfrac12\mathrm{Tr}(U_1 U_3 U_1^\dagger U_2^\dagger)=c_2 c_3+\mathbf q_2\cdot R_1\mathbf q_3,\\
+y&=\tfrac12\mathrm{Tr}(U_1 U_2 U_1^\dagger U_3^\dagger)=c_2 c_3+\mathbf q_3\cdot R_1\mathbf q_2.
 \end{aligned}
-y=\tfrac12\operatorname{Tr}(U_1 U_2 U_1^\dagger U_3^\dagger)=c_2 c_3+\mathbf q_3\cdot R_1\mathbf q_2.
 ```
 Rodrigues' formula gives $`(R_1-R_1^\mathsf{T})\mathbf w=4c_1\mathbf q_1\times\mathbf w`$. Thus $`x-y=-4c_1 D`$, where $`D=\mathbf q_1\cdot(\mathbf q_2\times\mathbf q_3)`$. The difference of triplet probabilities is
 ```math
@@ -33,7 +32,7 @@ If $`0\lt tB\le\pi/4`$ and $`\|\mathbf b_i\|\le B`$, then $`x,y\ge c_2 c_3-\|\ma
 
 The same bounds give $`p_\pm\le\sin^2(tB)`$ and
 ```math
-|p_+-p_-|\ge t^3\cos(\pi/8)\cos(\pi/4)\operatorname{sinc}^3(\pi/8)|\chi|.
+|p_+-p_-|\ge t^3\cos(\pi/8)\cos(\pi/4)\mathrm{sinc}^3(\pi/8)|\chi|.
 ```
 With one independent run of each setting, their indicator difference has variance at most $`p_++p_-\le 2(tB)^2`$ and takes values in $`\{-1,0,1\}`$. Repeat the pair and decide from the sign of its empirical mean. Bernstein's inequality gives error at most $`\delta`$ with $`O(B^2t^{-4}\chi_0^{-2}\log(1/\delta))`$ runs under $`|\chi|\ge\chi_0>0`$. Every run counts, including the runs that return to the singlet. The linear term in the Bernstein bound is absorbed using $`|p_+-p_-|\le p_++p_-`$.
 
