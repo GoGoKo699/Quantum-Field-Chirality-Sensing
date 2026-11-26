@@ -26,7 +26,7 @@ The overlap of the two singlet pairings is $1/2$. Moving each single-site rotati
 
 ```math
 \langle b|(U\otimes I)|a\rangle
-=\frac14\operatorname{Tr}(U_3^\dagger U_1U_2^\dagger)
+=\frac14\mathrm{Tr}(U_3^\dagger U_1U_2^\dagger)
 =\frac{C-D}{2}.
 ```
 
@@ -40,12 +40,12 @@ p_{\rm after}-p_{\rm before}&=CD.
 \end{aligned}
 ```
 
-Each normalized trace $`C\pm D`$ is the cosine of an angle bounded by $3tB/2$ using the triangle inequality for the geodesic angle on $\mathrm{SU}(2)$. Thus $`C\ge\cos(3\pi/8)>0`$ in the stated window. With $`\operatorname{sinc}(x)=\sin(x)/x`$ and its continuous value at zero,
+Each normalized trace $`C\pm D`$ is the cosine of an angle bounded by $3tB/2$ using the triangle inequality for the geodesic angle on $\mathrm{SU}(2)$. Thus $`C\ge\cos(3\pi/8)>0`$ in the stated window. With $`\mathrm{sinc}(x)=\sin(x)/x`$ and its continuous value at zero,
 
 ```math
 |CD|\ge g\,t^3|\chi|,
 \qquad
-g=\frac{\cos(3\pi/8)\operatorname{sinc}^3(\pi/8)}{8}.
+g=\frac{\cos(3\pi/8)\mathrm{sinc}^3(\pi/8)}{8}.
 ```
 
 ## Why a cubic signal needs quartically many rounds
