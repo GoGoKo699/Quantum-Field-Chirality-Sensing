@@ -1,0 +1,19 @@
+# Quantum Field Chirality Sensing
+
+> A rotation-invariant test for the sign of three unknown local spin rotations. A sheltered fourth spin makes one-window detection possible. The rare-outcome statistic has a matching weak-exposure sample exponent for fresh independent rounds.
+
+## Scientific account
+
+- [Model and results](science/model.md): Exposure, spin reference, promise, shot and control resources.
+- [Sensing protocol](science/protocol.md): Two configurations of a common SWAP and detector, exact chirality contrast, finite sign guarantee and Bernstein bound.
+- [Converse](science/converse.md): Exact three-spin blindness and small-time Hellinger bound.
+- [Robustness](science/robustness.md): Binary detector floor, routing-dependent bias and imperfect spectator shielding.
+- [Two exposures](science/two-exposures.md): One extra coherent sensing window and a cyclic exchange replace the sheltered spin.
+
+## Learn and reproduce
+
+- [Learning route](learning/README.md): Start with the one external reading, connect it to the protocol and work through 30 milestones.
+- [Related work](references/RELATED_WORK.md): Supplied-state chirality, unknown-gate comparison and experimental primitives.
+- [Verification](verification/README.md): Exact finite dimensions, numerical identities and limits of the tests.
+
+The matched rate fixes the field bound and the chirality gap and charges all rounds. It permits classical adaptation across rounds and ideal rotation-invariant quantum operations within a round.
